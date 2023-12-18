@@ -43,17 +43,13 @@ return a;
 }
 
 
-#include <iostream>
-#include <string>
-using namespace std;
+
 
 int str_len(string s1){
 int i;
 for (i = 0; s1[i] > '\0'; i++);
     return i;
 }
-
-
 bool itc_compare(string s1, string s2){
 int a, b;
 a = str_len(s1);
@@ -61,15 +57,11 @@ b = str_len(s2);
 if (a != b)
 return false;
 
-for (i = 0;  s1[i] > '\0'; i++);
-
+for (int i = 0;  s1[i] != '\0'; i++){
+    if (s1[i] != s2[i])
+    return false;
+else
+    return true;
 }
-
-int main()
-{
-
-cout << str_len("iuyr");
-
-    return 0;
 }
 
