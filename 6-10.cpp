@@ -75,7 +75,7 @@ bool itc_isFirstInSecond(string s1, string s2){
 
 
 
-          string itc_Cezar(string str, int k){
+string itc_Cezar(string str, int k){
     string res = "";
     int abc = 26;
 
